@@ -20,6 +20,7 @@ while True:
     print("Server > ",s.recv(1024).decode())
 ```
 ##SERVER
+```
 import socket 
 s=socket.socket() 
 s.bind(('localhost',8000)) 
@@ -28,6 +29,7 @@ c,addr=s.accept()
 while True: 
     ClientMessage=c.recv(1024).decode() 
     c.send(ClientMessage.encode())
+```
 ## OUPUT
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2cb0581a-26a0-4f4b-9a2b-cb9db7edee2a" />
 
